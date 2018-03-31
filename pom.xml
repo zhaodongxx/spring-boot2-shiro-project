@@ -51,7 +51,12 @@
 			<artifactId>shiro-spring-boot-starter</artifactId>
 			<version>1.4.0</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

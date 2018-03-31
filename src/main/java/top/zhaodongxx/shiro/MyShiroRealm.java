@@ -16,28 +16,31 @@ import javax.annotation.Resource;
 /**
  * <P></P>
  *
- * @author zhaodong
+ * @author zhaodong zhaodongxx@outlook.com
  * @version v1.0
- * @email zhaodongxx@outlook.com
  * @since 2018/3/30 22:55
  */
 @Slf4j
 public class MyShiroRealm extends AuthorizingRealm {
 
     @Resource
-    public ShiroService shiroService;
+    private ShiroService shiroService;
 
     /**
      * 授权
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-        SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
-        return authorizationInfo;
+        return new SimpleAuthorizationInfo();
     }
 
     /**
      * 登录认证
+     *
+     * 四个参数
+     * username：认证的实体信息。object,一般存放用户信息对象。可以通过SecurityUtils.getSubject().getPrincipal()获取。
+     * password：数据库中保存的密码
+     * realmName：当前realm对象的name，调用父类的getName()方法即可
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
@@ -46,11 +49,9 @@ public class MyShiroRealm extends AuthorizingRealm {
 
         String password = shiroService.getPasswordByUsername(username);
         if (password != null) {
-            AuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                    username,   //认证通过后，存放在session,一般存放user对象
-                    password,   //用户数据库中的密码
-                    getName());    //返回Realm名
-            return authenticationInfo;
+
+            String realmName = getName();
+            return new SimpleAuthenticationInfo(username, password, realmName);
         }
         return null;
     }

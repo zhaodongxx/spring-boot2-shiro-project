@@ -8,9 +8,8 @@ import top.zhaodongxx.result.ResultGenerator;
 /**
  * <P></P>
  *
- * @author zhaodong
+ * @author zhaodong zhaodongxx@outlook.com
  * @version v1.0
- * @email zhaodongxx@outlook.com
  * @since 2018/3/30 21:55
  */
 @RestController

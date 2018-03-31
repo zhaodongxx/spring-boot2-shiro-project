@@ -5,9 +5,8 @@ import org.springframework.stereotype.Service;
 /**
  * <P></P>
  *
- * @author zhaodong
+ * @author zhaodong zhaodongxx@outlook.com
  * @version v1.0
- * @email zhaodongxx@outlook.com
  * @since 2018/3/30 22:59
  */
 @Service
