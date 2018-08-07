@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <P></P>
  *
  * @author zhaodong zhaodongxx@outlook.com
  * @version v1.0
@@ -35,6 +34,7 @@ public class ShiroService {
 
     /**
      * 根据用户名查询用户
+     *
      * @param username
      * @return
      */
@@ -50,6 +50,7 @@ public class ShiroService {
 
     /**
      * 添加用户
+     *
      * @param username
      * @param password
      * @return
