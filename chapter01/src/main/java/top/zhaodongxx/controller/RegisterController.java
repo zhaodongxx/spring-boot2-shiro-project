@@ -1,4 +1,4 @@
-package top.zhaodongxx.controller;
+package main.java.top.zhaodongxx.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
