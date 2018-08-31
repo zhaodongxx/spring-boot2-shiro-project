@@ -1,4 +1,4 @@
-package top.zhaodongxx.config;
+package top.zhaodongxx.chapter02.config;
 
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -10,7 +10,7 @@ import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import top.zhaodongxx.shiro.MyShiroRealm;
+import top.zhaodongxx.chapter02.shiro.MyShiroRealm;
 
 /**
  * <P></P>

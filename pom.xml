@@ -23,7 +23,7 @@
     <!-- 模块说明：这里声明多个子模块 -->
     <modules>
         <module>chapter01</module>
-        <module>chapter01</module>
+        <module>chapter02</module>
     </modules>
 
     <properties>
@@ -61,16 +61,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!--该插件作用是打一个可运行的包，必须要写在需要打包的项目里。这里的父模块不需要打包运行，所以删掉该插件。-->
-    <!--<build>-->
-    <!--<plugins>-->
-    <!--<plugin>-->
-    <!--<groupId>org.springframework.boot</groupId>-->
-    <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
-    <!--</plugin>-->
-    <!--</plugins>-->
-    <!--</build>-->
-
-
 </project>
