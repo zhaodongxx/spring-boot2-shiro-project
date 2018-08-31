@@ -1,4 +1,4 @@
-package top.zhaodongxx.result;
+package top.zhaodongxx.chapter01.result;
 
 /**
  *

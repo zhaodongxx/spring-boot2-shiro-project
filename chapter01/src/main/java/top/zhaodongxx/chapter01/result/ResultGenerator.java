@@ -1,4 +1,4 @@
-package top.zhaodongxx.result;
+package top.zhaodongxx.chapter01.result;
 
 /**
  * Created by zhaod on 2018/1/24 18:02

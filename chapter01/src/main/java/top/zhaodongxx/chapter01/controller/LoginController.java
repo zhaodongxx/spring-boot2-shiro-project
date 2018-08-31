@@ -1,4 +1,4 @@
-package top.zhaodongxx.controller;
+package top.zhaodongxx.chapter01.controller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -6,8 +6,8 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.zhaodongxx.result.Result;
-import top.zhaodongxx.result.ResultGenerator;
+import top.zhaodongxx.chapter01.result.Result;
+import top.zhaodongxx.chapter01.result.ResultGenerator;
 
 /**
  *

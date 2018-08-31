@@ -1,4 +1,4 @@
-package top.zhaodongxx.result;
+package top.zhaodongxx.chapter01.result;
 
 /**
  * 响应码 枚举，参考HTTP状态码的语义

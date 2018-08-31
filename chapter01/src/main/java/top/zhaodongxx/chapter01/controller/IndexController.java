@@ -1,9 +1,9 @@
-package top.zhaodongxx.controller;
+package top.zhaodongxx.chapter01.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.zhaodongxx.result.Result;
-import top.zhaodongxx.result.ResultGenerator;
+import top.zhaodongxx.chapter01.result.Result;
+import top.zhaodongxx.chapter01.result.ResultGenerator;
 
 /**
  * <P></P>
